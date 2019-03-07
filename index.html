@@ -1,95 +1,42 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>twentytwenty</title>
-  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Learn how to build 2D HTML5 Breakout game in pure JavaScript</title>
+    <style>
+        body { width: 650px; margin: 0 auto; }
+        a { color: #0095DD; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-  <body>
+<body>
 
-    <div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>Radar</h3>
-        <p>Old Radar vs Latest Radar</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test1.jpg" />
-          <img src="img/test2.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>A Site</h3>
-        <p>A Site Old vs Latest A Site</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test3.jpg" />
-          <img src="img/test4.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>T Spawn</h3>
-        <p>T Spawn Old vs T Spawn</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test5.jpg" />
-          <img src="img/test6.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>CT Spawn</h3>
-        <p>CT Spawn Old vs CT Spawn</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test7.jpg" />
-          <img src="img/test8.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>A Long</h3>
-        <p>A Long Old vs A Long</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test9.jpg" />
-          <img src="img/test10.jpg" />
-        </div>
-      </div>
-    </div>
-	
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
-    <script>
-    $(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
-    </script>
-  </body>
+<h1>Learn how to build 2D HTML5 Breakout game in pure JavaScript</h1>
+
+<p>In this step-by-step <a href="https://github.com/end3r/Gamedev-Canvas-workshop">tutorial</a> we create a simple MDN Breakout game written entirely in pure JavaScript and rendered on HTML5 Canvas. Every step has editable, live samples available to play with so you can see what the intermediate stages should look like. You will learn the basics of using the Canvas element to implement fundamental game mechanics like rendering and moving images, collision detection, control machanisms, and winning and losing states.</p>
+
+<p><img src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="MDN Breakout gameplay" /></p>
+
+<p>To get the most out of this series of articles you should already have basic to intermediate JavaScript knowledge. After working through this tutorial you should be able to build your own simple Web games.</p>
+
+<h2><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript">2D breakout game using pure JavaScript</a></h2>
+
+<ol>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Create_the_Canvas_and_draw_on_it">Create the Canvas and draw on it</a> - <a href="http://breakout.enclavegames.com/lesson01.html">example #1</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Move_the_ball">Move the ball</a> - <a href="http://breakout.enclavegames.com/lesson02.html">example #2</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Bounce_off_the_walls">Bounce off the walls</a> - <a href="http://breakout.enclavegames.com/lesson03.html">example #3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Paddle_and_keyboard_controls">Paddle and keyboard controls</a> - <a href="http://breakout.enclavegames.com/lesson04.html">example #4</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Game_over">Game over</a> - <a href="http://breakout.enclavegames.com/lesson05.html">example #5</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Build_the_brick_field">Build the brick field</a> - <a href="http://breakout.enclavegames.com/lesson06.html">example #6</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Collision_detection">Collision detection</a> - <a href="http://breakout.enclavegames.com/lesson07.html">example #7</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Track_the_score_and_win">Track the score and win</a> - <a href="http://breakout.enclavegames.com/lesson08.html">example #8</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Mouse_controls">Mouse controls</a> - <a href="http://breakout.enclavegames.com/lesson09.html">example #9</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript/Finishing_up">Finishing up</a> - <a href="http://breakout.enclavegames.com/lesson10.html">example #10</a></li>
+</ol>
+
+<p>Starting with pure JavaScript is the best way to get a solid knowledge of web game development. After that, you can pick any framework you like and use it for your projects. Frameworks are just tools built with the JavaScript language; so even if you plan on working with them, it's good to learn about the language itself first to know what exactly is going on under the hood. Frameworks speed up development time and help take care of boring parts of the game, but if something is not working as expected, you can always try to debug that or just write your own solutions in pure JavaScript.</p>
+
+<p>You can visit the <a href="https://github.com/end3r/Gamedev-Canvas-workshop">GitHub repository</a> of this tutorial to get the source code of all the lessons.</p>
+
+</body>
 </html>
