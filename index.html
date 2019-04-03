@@ -10,18 +10,19 @@
   <h2>Jacob Pederson's Portfolio</h2>
   <p>Screen Name: Avernus</p> 
   <div class="w3-row">
-    <a href="javascript:void(0)" onclick="openCity(event, 'Raid');">
+    <a href="javascript:void(0)" onclick="openProject(event, 'Raid');">
       <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Raid(CSGO)</div>
     </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Crimson');">
+    <a href="javascript:void(0)" onclick="openProject(event, 'Crimson');">
       <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Crimson(CSGO)</div>
     </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Miasto');">
+    <a href="javascript:void(0)" onclick="openProject(event, 'Miasto');">
       <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Miasto(CSGO)</div>
     </a>
+    <p style="text-align:center;">Click one of the buttons above to view a project!</p> 
   </div>
 
-  <div id="Raid" class="w3-container city" style="display:none">
+  <div id="Raid" class="w3-container Project" style="display:none">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -77,6 +78,7 @@
 
 </div>
 
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -99,13 +101,13 @@ function showDivs(n) {
 
 </div>
 
-  <div id="Crimson" class="w3-container city" style="display:none">
+  <div id="Crimson" class="w3-container Project" style="display:none">
     <h2>Crimson(Wingman)</h2>
     <p>Created by: Avernus, Hordeau</p>
     <p>Wingman map created for 2018 SE Discord Wingman Contest.</p> 
   </div>
 
-  <div id="Miasto" class="w3-container city" style="display:none">
+  <div id="Miasto" class="w3-container Project" style="display:none">
     <h2>Miasto(Defusal)</h2>
      <p>Created By: Avernus, Gamez7, Slimek, Polybius</p>
     <p>Defusal map created for 2019 Mapcore Competition</p>
@@ -114,9 +116,9 @@ function showDivs(n) {
 
 
 <script>
-function openCity(evt, cityName) {
+function openProject(evt, ProjectName) {
   var i, x, tablinks;
-  x = document.getElementsByClassName("city");
+  x = document.getElementsByClassName("Project");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -124,7 +126,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(ProjectName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
 </script>
