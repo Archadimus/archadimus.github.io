@@ -1,95 +1,151 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>twentytwenty</title>
-  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-</head>
-  <body>
+<html>
+<title>Jacob Pederson's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<body style="background-color:#D3D3D3">
 
-    <div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>Radar</h3>
-        <p>Old Radar vs Latest Radar</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test1.jpg" />
-          <img src="img/test2.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>A Site</h3>
-        <p>A Site Old vs Latest A Site</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test3.jpg" />
-          <img src="img/test4.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>T Spawn</h3>
-        <p>T Spawn Old vs T Spawn</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test5.jpg" />
-          <img src="img/test6.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>CT Spawn</h3>
-        <p>CT Spawn Old vs CT Spawn</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test7.jpg" />
-          <img src="img/test8.jpg" />
-        </div>
-      </div>
-    </div>
-	
-	<div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>A Long</h3>
-        <p>A Long Old vs A Long</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test9.jpg" />
-          <img src="img/test10.jpg" />
-        </div>
-      </div>
-    </div>
-	
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
-    <script>
-    $(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
-    </script>
-  </body>
+<div class="w3-container">
+  <h2>Jacob Pederson's Portfolio</h2>
+  <p>Screen Name: Avernus</p> 
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openProject(event, 'Raid');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Raid(CSGO)</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openProject(event, 'Crimson');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Crimson(CSGO)</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openProject(event, 'Miasto');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Miasto(CSGO)</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openProject(event, 'CanalCity');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Canal City(Garry's Mod)</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openProject(event, 'BLANK');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BLANK</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openProject(event, 'BLANK');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BLANK</div>
+    </a>
+
+    <p style="text-align:center;">Click one of the buttons above to view a project!</p> 
+  </div>
+
+  <div id="Raid" class="w3-container Project" style="display:none">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<div class="w3-container">
+  <h2>Raid(Defusal)</h2>
+  <p>Created By: Avernus, Jdbener</p>
+  <p>Project Started: May 29th, 2017. Project Completed: May 29th, 2019.</p>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="img/test1.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    T Spawn
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test2.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    CT Spawn
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test3.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Middle
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test4.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Bombsite A
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test5.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Bombsite B
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</div>
+
+  <div id="Crimson" class="w3-container Project" style="display:none">
+    <h2>Crimson(Wingman)</h2>
+    <p>Created by: Avernus, Hordeau</p>
+    <p>Wingman map created for 2018 SE Discord Wingman Contest.</p> 
+  </div>
+
+  <div id="Miasto" class="w3-container Project" style="display:none">
+    <h2>Miasto(Defusal)</h2>
+     <p>Created By: Avernus, Gamez7, Slimek, Polybius</p>
+    <p>Defusal map created for 2019 Mapcore Competition</p>
+  </div>
+
+  <div id="CanalCity" class="w3-container Project" style="display:none">
+    <h2>Canal City(RP)</h2>
+     <p>Created By: Avernus</p>
+    <p>Basic roleplay map with a large canal that runs throughout the city. Intended for the DarkRP gamemode, but works for any other type.</p>
+  </div>
+
+
+
+<script>
+function openProject(evt, ProjectName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("Project");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(ProjectName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+</script>
+
+</body>
 </html>
