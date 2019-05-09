@@ -137,6 +137,22 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+
+function openProject(evt, ProjectName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("Project");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(ProjectName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+
 </script>
 
 </div>
@@ -159,23 +175,6 @@ function showDivs(n) {
     <p>Remake of the less-than-popular CS:CZ map of the same name. It is set in an abandoned subway/mall, due to the change in weather, it has been snowed in.</p>
   </div>
 
-
-
-<script>
-function openProject(evt, ProjectName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("Project");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-  }
-  document.getElementById(ProjectName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-border-red";
-}
-</script>
 
 </body>
 </html>
