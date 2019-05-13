@@ -2,12 +2,9 @@
 <html>
 <title>Jacob Pederson's Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="css/foundation.css" rel="stylesheet" type="text/css" />
-<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-<body style="background-color:#d3d3d3">
+<body>
+<body style="background-color:#D3D3D3">
 
 <div class="w3-container">
   <h2>Jacob Pederson's Portfolio</h2>
@@ -43,60 +40,56 @@
 .mySlides {display:none;}
 </style>
 
- <div id="Raid" class="w3-container Project" style="display:none">
+<div class="w3-container">
   <h2>Raid(Defusal)</h2>
   <p>Created By: Avernus, Jdbener</p>
   <p>Project Started: May 29th, 2017. Project Completed: May 29th, 2019.</p>
+</div>
 
+<div class="w3-content w3-display-container">
 
- <div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>Radar</h3>
-        <p>Old Radar vs Latest Radar</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/test1.jpg" />
-          <img src="img/test2.jpg" />
-        </div>
-      </div>
+<div class="w3-display-container mySlides">
+  <img src="img/test1.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    T Spawn
   </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test2.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    CT Spawn
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test3.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Middle
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test4.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Bombsite A
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/test5.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Bombsite B
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
 </div>
 
-  <div id="Crimson" class="w3-container Project" style="display:none">
-    <h2>Crimson(Wingman)</h2>
-    <p>Created by: Avernus, Hordeau</p>
-    <p>Wingman map created for 2018 SE Discord Wingman Contest.</p> 
-  </div>
-
-  <div id="Miasto" class="w3-container Project" style="display:none">
-    <h2>Miasto(Defusal)</h2>
-     <p>Created By: Avernus, Gamez7, Slimek, Polybius</p>
-    <p>Defusal map created for 2019 Mapcore Competition</p>
-  </div>
-
-  <div id="Fastline" class="w3-container Project" style="display:none">
-    <h2>Fastline</h2>
-     <p>Created By: Avernus</p>
-    <p>Remake of the less-than-popular CS:CZ map of the same name. It is set in an abandoned subway/mall, due to the change in weather, it has been snowed in.</p>
-  </div>
-
-</body>
 
 <script>
-
-src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
-    <script>
-    $(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -114,8 +107,31 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+</script>
+
+</div>
+
+  <div id="Crimson" class="w3-container Project" style="display:none">
+    <h2>Crimson(Wingman)</h2>
+    <p>Created by: Avernus, Hordeau</p>
+    <p>Wingman map created for 2018 SE Discord Wingman Contest.</p> 
+  </div>
+
+  <div id="Miasto" class="w3-container Project" style="display:none">
+    <h2>Miasto(Defusal)</h2>
+     <p>Created By: Avernus, Gamez7, Slimek, Polybius</p>
+    <p>Defusal map created for 2019 Mapcore Competition</p>
+  </div>
+
+  <div id="Fastline" class="w3-container Project" style="display:none">
+    <h2>Fastline(Defusal)</h2>
+     <p>Created By: Avernus</p>
+    <p>Remake of a less-than-popular CS:CZ map of the same name.</p>
+  </div>
 
 
+
+<script>
 function openProject(evt, ProjectName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("Project");
@@ -129,7 +145,7 @@ function openProject(evt, ProjectName) {
   document.getElementById(ProjectName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
-
 </script>
 
+</body>
 </html>
