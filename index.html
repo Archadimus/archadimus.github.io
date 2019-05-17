@@ -1,305 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Jacob Pederson's Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body style="background-color:#D3D3D3">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-</style>
-
-<div class="w3-container">
-  <h2>Jacob Pederson's Portfolio</h2>
-  <p>Screen Name: Avernus</p> 
-  <div class="w3-row">
-    <a href="javascript:void(0)" onclick="openProject(event, 'Raid');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Raid(CSGO)</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openProject(event, 'Crimson');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Crimson(CSGO)</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openProject(event, 'Miasto');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Miasto(CSGO)</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openProject(event, 'Fastline');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Fastline(CSGO)</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openProject(event, 'BLANK');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BLANK</div>
-    </a>
-    <a href="javascript:void(0)" onclick="openProject(event, 'BLANK');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BLANK</div>
-    </a>
-
-    <p style="text-align:center;">Click one of the buttons above to view a project!</p> 
-  </div>
-
-<div id="Raid" class="w3-container Project" style="display:none">
-
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.mySlides {display:none;}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
-
-<div class="w3-container">
-  <h2>Raid(Defusal)</h2>
-  <p>Created By: Avernus, Jdbener</p>
-  <p>Project Started: May 29th, 2017. Project Completed: May 29th, 2019.</p>
-</div>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-</style>
-
-</head>
 <body>
 
-<div style="text-align:center">
-  <h2>Tabbed Image Gallery</h2>
-  <p>Click on the images below:</p>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#FRIENDS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FRIENDS</a>
+    <a href="#PROJECTS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
 </div>
 
-<!-- The four columns -->
-<div class="row">
-  <div class="column">
-    <img id="img01" src="img/test1.jpg" alt="Overview" style="width:100%;max-width:300px">
-    <img id="img01" src="img/test2.jpg" alt="Bombsite A" style="width:100%;max-width:300px">
-    <img id="img01" src="img/test3.jpg" alt="Bombsite B" style="width:100%;max-width:300px">
-    <img id="img01" src="img/test4.jpg" alt="Middle" style="width:100%;max-width:300px">
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#FRIENDS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FRIENDS</a>
+  <a href="#PROJECTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images, Copy + Paste -->
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
   </div>
 
+
+
+
+
+  <!-- The FRIENDS Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="FRIENDS">
+    <h2 class="w3-wide">Cool People I've Worked With</h2>
+    <p class="w3-opacity"><i>'Free Advertising'</i></p>
+    <p class="w3-justify">We have created a fictional FRIENDS website.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/FRIENDSmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/FRIENDSmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/FRIENDSmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Maps Section -->
+  <div class="w3-black" id="PROJECTS">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">PROJECTS</h2>
+      <p class="w3-opacity w3-center"><i>Level Design Projects</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Raid(CSGO) <span class="w3-tag w3-red w3-margin-left">WIP</span></li>
+        <li class="w3-padding">Miasto(CSGO) <span class="w3-tag w3-red w3-margin-left">WIP</span></li>
+        <li class="w3-padding">Fastline(CSGO) <span class="w3-tag w3-red w3-margin-left">WIP</span></li>
+<!--        <li class="w3-padding">Fastline(CSGO) <span class="w3-badge w3-right w3-margin-right">WIP</span></li> -->
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Have a suggestion, problem, or other? Email me!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Madison, Wisconsin, USA<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: pedersonjacob17@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-
-</div>
-
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
-</script>
 
-
-</div>
-
-  <div id="Crimson" class="w3-container Project" style="display:none">
-    <h2>Crimson(Wingman)</h2>
-    <p>Created by: Avernus, Hordeau</p>
-    <p>Wingman map created for 2018 SE Discord Wingman Contest.</p> 
-  </div>
-
-  <div id="Miasto" class="w3-container Project" style="display:none">
-    <h2>Miasto(Defusal)</h2>
-     <p>Created By: Avernus, Gamez7, Slimek, Polybius</p>
-    <p>Defusal map created for 2019 Mapcore Competition</p>
-  </div>
-
-  <div id="Fastline" class="w3-container Project" style="display:none">
-    <h2>Fastline(Defusal)</h2>
-     <p>Created By: Avernus</p>
-    <p>Remake of a less-than-popular CS:CZ map of the same name.</p>
-  </div>
-
-
-
-<script>
-function openProject(evt, ProjectName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("Project");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-  }
-  document.getElementById(ProjectName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
 </script>
 
